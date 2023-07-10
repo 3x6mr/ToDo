@@ -36,6 +36,8 @@
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
+    
+
 }
 .row #input-box{
     flex: 1;
@@ -46,6 +48,7 @@
 }
 .row button{
     outline: none;
+    max-width: 100%;
     border: none;
     padding: 15px 50px;
     border-radius: 40px;
@@ -104,4 +107,21 @@ ul li span:hover{
     background-color: #c4c4c4;
     color: black;
     transform: rotate(90deg);
+}
+
+@media (max-width:676px) {
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;   
+        border-radius: 10px; 
+        padding-left: 0;
+    }
+    .row button{
+        border-radius: 10px;
+    }
+    .row #input-box{
+        padding-left: 20px;
+        padding-top: 10px;
+    }
 }
